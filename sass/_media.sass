@@ -10,6 +10,32 @@
 		width: 230px
 		height: 230px
 
+	.packages
+		padding: 40px 0 70px 0
+		&__title
+			font-weight: bold
+			font-size: 36px
+			line-height: 45px
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 65px
+
+		&-wrapper
+			display: grid
+			grid-template-columns: repeat(3,300px)
+			grid-template-rows: repeat(2, 500px)
+			grid-template-areas: "packages-first packages-first packages-item__1" "packages-item__2 packages-item__3 packages-item__4"
+			grid-gap: 30px
+		&-first
+			display: flex
+			justify-content: space-between
+			width: 630px
+			height: 500px
+			border-radius: 8px 8px 8px 8px
+			overflow: hidden
+			&__text
+				font-size: 13px
+
 @media screen and ( max-width: 992px	)
 	.container,
 	.newsletter-wrapper
@@ -29,6 +55,7 @@
 	.logo
 		width: 131px
 	.hotel
+		padding: 23px 0 60px 0
 		&-grid
 			flex-direction: column
 		&__slider
@@ -60,6 +87,30 @@
 			margin-bottom: 0
 		&:nth-child(4)
 			margin-bottom: 0
+	.packages
+		padding: 35px 0 70px 0
+		&__title
+			font-weight: bold
+			font-size: 36px
+			line-height: 45px
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 65px
+		&-wrapper
+			display: grid
+			grid-template-columns: repeat(2,335px)
+			grid-template-rows: repeat(2, 500px)
+			grid-template-areas: "packages-first packages-first" "packages-item__1 packages-item__2" "packages-item__3 packages-item__4"
+			grid-gap: 30px
+		&-first
+			display: flex
+			justify-content: space-between
+			width: 700px
+			height: 500px
+			border-radius: 8px 8px 8px 8px
+			overflow: hidden
+			&__text
+				font-size: 14px
 
 @media screen and ( max-width: 768px	)
 	.container,
@@ -85,6 +136,7 @@
 				background: $text-color
 				padding: 0
 	.hotel
+		padding: 23px 0 60px 0
 		&-wrapper
 		&-info
 			&__offer
@@ -122,6 +174,124 @@
 					left: 30%
 				&-next
 					right: 30%
+	.packages
+		padding: 30px 0 60px 0
+		&__title
+			font-weight: bold
+			font-size: 30px
+			line-height: 45px
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 65px
+		&-wrapper
+			display: grid
+			grid-template-columns: repeat(2,275px)
+			grid-template-rows: repeat(2, 465px)
+			grid-template-areas: "packages-first packages-first" "packages-item__1 packages-item__2" "packages-item__3 packages-item__4"
+			grid-gap: 25px
+		&-first
+			display: flex
+			justify-content: space-between
+			width: 576px
+			height: 460px
+			border-radius: 8px 8px 8px 8px
+			overflow: hidden
+			&__text
+				font-size: 13px
+			&__body
+				padding: 20px 21px 0px 20px
+				background: $dark
+				color: $light
+				width: 364px
+				height: 460px
+				display: flex
+				flex-direction: column
+				grid-area: packages-first
+				border-radius: 0px 8px 8px 0px
+				overflow: hidden
+		&-item
+			position: relative
+			background: $dark
+			color: $light
+			border-radius: 8px
+			overflow: hidden
+			display: flex
+			flex-direction: column
+			&::before
+				content: 'Flash Offer'
+				position: absolute
+				height: 30px
+				color: $light
+				padding: 8px 12px
+				left: 0
+				top: 26px
+				background: $primary
+				font-weight: 600
+				font-size: 12px
+				line-height: 15px
+				border-radius: 0 4px 4px 0
+			&__image
+				object-fit: cover
+				width: 100%
+				min-height: 250px
+				max-height: 250px
+			&__wrapper
+				padding: 5px 21px 15px 16px
+				display: flex
+				flex-direction: column
+			&__button
+				padding: 10px 22px
+@media screen and ( max-width: 630px )
+	.packages
+		padding: 15px 0 60px 0
+		&__title
+			font-weight: bold
+			font-size: 25px
+			line-height: 45px
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 50px
+		&-wrapper
+			display: grid
+			grid-template-columns: 100%
+			grid-template-rows: repeat(4, 500px)
+			grid-template-areas: "packages-item__1" "packages-item__2" "packages-item__3" "packages-item__4"
+			grid-gap: 30px
+		&-first
+			display: none
+		&-item
+			position: relative
+			background: $dark
+			color: $light
+			border-radius: 8px
+			overflow: hidden
+			display: flex
+			flex-direction: column
+			&::before
+				content: 'Flash Offer'
+				position: absolute
+				height: 30px
+				color: $light
+				padding: 8px 12px
+				left: 0
+				top: 26px
+				background: $primary
+				font-weight: 600
+				font-size: 12px
+				line-height: 15px
+				border-radius: 0 4px 4px 0
+			&__image
+				object-fit: cover
+				width: 100%
+				min-height: 250px
+				max-height: 250px
+			&__wrapper
+				padding: 30px 21px 25px 25px
+				display: flex
+				flex-direction: column
+			&__button
+				padding: 10px 27px
+
 @media ( max-width: 576px )
 	.logo
 		width: 99px
@@ -157,7 +327,7 @@
 			padding-left: 20px
 			padding-right: 75px
 	.reviews
-		padding: 30px 0 50px 0
+		padding: 30px 0 40px 0
 		&-title
 			font-size: 23px
 			line-height: 23px
@@ -171,7 +341,7 @@
 				&-next
 					right: 29%
 	.activities
-		padding: 40px 0 60px 0				
+		padding: 40px 0 60px 0
 	.card
 		width: 100%
 		margin-bottom: 20px

@@ -1,0 +1,43 @@
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.packages-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas: "packages-first packages";
+  grid-gap: 30px;
+}
+
+.packages-first {
+  display: flex;
+  justify-content: space-between;
+  width: 730px;
+  height: 500px;
+}
+
+.packages-first__image {
+  position: relative;
+  grid-area: packages-first;
+  width: 366px;
+  max-height: 500px;
+}
+
+.packages-first__body {
+  width: 364px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  grid-area: packages-first;
+}
+/*# sourceMappingURL=packages.css.map */
