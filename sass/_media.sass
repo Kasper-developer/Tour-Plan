@@ -112,6 +112,49 @@
 			&__text
 				font-size: 14px
 
+	.footer
+		padding: 73px 0 33px 0
+		&-wrapper
+			grid-template-columns: repeat(6, minmax(min-content, 1fr))
+		&__logo
+			width: 104px
+			height: 120.29px
+			grid-row: 1 / 2
+			grid-column: span 2
+		&__social
+			&-network
+				align-self: center
+				margin-top: 0
+				align-items: center
+				grid-row: 1
+				grid-column: span 3
+		&__categories
+			grid-row: 2
+			grid-column: span 2
+			margin-top: 38px
+		&__additional
+			margin-top: 38px
+			grid-row: 2
+			grid-column: span 2
+		&__legal
+			margin-top: 38px
+			grid-row: 2
+			grid-column: span 2
+		&__contact-details
+			margin-top: 61px
+			grid-row: 3
+			grid-column: span 5
+		&__contact-form
+			margin-top: 60px
+			grid-row: 4
+			grid-column: span 5
+		&__copyright
+			margin-top: 94px
+			&-wrapper
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 100%
 @media screen and ( max-width: 768px	)
 	.container,
 	.newsletter-wrapper
@@ -151,6 +194,9 @@
 			flex-direction: column
 	.stars
 		flex-basis: auto
+		display: flex
+		img
+			margin-right: 0
 	.booking
 		width: 100%
 		margin-bottom: 20px
@@ -241,6 +287,75 @@
 				flex-direction: column
 			&__button
 				padding: 10px 22px
+	.footer
+		padding: 69px 0 21px 0
+		&-wrapper
+			grid-template-columns: repeat(1, minmax(min-content, 1fr))
+		&__logo
+			grid-row: 1
+			grid-column: 1
+			margin-bottom: 30px
+		&__social
+			&-network
+				align-self: stretch
+				flex-direction: column
+				margin-top: 0
+				align-items: self-start
+				grid-row: 2
+				grid-column: span 3
+			&-links
+				margin-top: 20px
+		&__categories
+			grid-row: 5
+			grid-column: span 2
+			margin-top: 38px
+		&__additional
+			margin-top: 38px
+			grid-row: 4
+			grid-column: span 2
+		&__legal
+			margin-left: 0
+			margin-top: 38px
+			grid-row: 3
+			grid-column: span 2
+		&__contact-details
+			margin-top: 41px
+			grid-row: 6
+			grid-column: span 5
+		&__text
+			line-height: 20px
+		&__contact-form
+			margin-top: 60px
+			grid-row: 7
+			grid-column: span 5
+		&__form
+			justify-content: start
+		&__message
+			order: 2
+		&__button
+			order: 4
+		&__required
+			flex-basis: 100%
+			margin-bottom: 15px
+			order: 3
+		&__input
+			order: 1
+			flex-basis: 100%
+			width: 255px
+			height: 50px
+			padding-left: 23px
+			border-radius: 4px
+			margin-bottom: 15px
+		&__copyright
+			margin-top: 30px
+			&-wrapper
+				padding-left: 0
+				display: flex
+				flex-direction: column
+				width: 100%
+				margin: 0
+			&-image
+				margin-top: 10px
 @media screen and ( max-width: 630px )
 	.packages
 		padding: 15px 0 60px 0

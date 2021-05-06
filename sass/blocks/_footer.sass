@@ -1,0 +1,125 @@
+.footer
+	padding: 108px 0 46px 0
+	background: $dark
+	color: $light
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(4, minmax(min-content, 1fr))
+		grid-auto-rows: minmax(70px, min-content )
+		align-items: start
+	&__logo
+		width: 166px
+		grid-row: 1 / 3
+		align-self: center
+	&__list
+
+	&__categories
+		grid-row: 1 / 4
+	&__additional
+
+	&__legal
+		margin-left: 20%
+	&__title
+		width: auto
+		font-weight: bold
+		font-size: 18px
+		line-height: 23px
+		text-transform: uppercase
+		margin-bottom: 16px
+		&--mb-3
+			margin-bottom: 30px
+	&__item
+		display: flex
+		align-items: flex-start
+		font-weight: normal
+		font-size: 14px
+		line-height: 160%
+		color: $footer-text-color
+		margin-bottom: 5px
+		&--mb-2
+			margin-bottom: 26px
+	&__link
+		color: $footer-text-color
+	&__social
+		&-network
+			display: flex
+			grid-row: 2 / 4
+			grid-column: span 2
+			margin-top: 24px
+			& .footer__title
+				margin: 0 43px 0 0
+		&-links
+			min-width: 83px
+			display: flex
+			justify-content: space-between
+
+	&__contact-details
+		grid-column: span 2
+	&__text
+		color: $footer-text-color
+		margin-bottom: 22px
+	&__icon-wrapper
+		min-width: 40px
+	&__icon
+		margin-bottom: 26px
+		&--last
+			margin-bottom: 0
+	&__contact-form
+		display: flex
+		flex-direction: column
+		grid-column: span 2
+	&__form
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+	&__input
+		flex-basis: 47%
+		width: 255px
+		height: 50px
+		padding-left: 23px
+		border-radius: 4px
+		margin-bottom: 15px
+	&__message
+		flex-basis: 100%
+		width: 539px
+		height: 123px
+		padding: 18px 23px
+		border-radius: 4px
+		margin-bottom: 23px
+		resize: none
+	&__button
+		min-width: 160px
+		min-height: 50px
+		font-weight: bold
+		font-size: 12px
+		line-height: 15px
+		padding: 18px 65px
+		background: $primary
+		color: $light
+		border-radius: 4px
+	&__required
+		font-weight: bold
+		font-size: 12px
+		line-height: 15px
+		color: #E0E0E0
+	&__copyright
+		margin-top: 94px
+		&-wrapper
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 70%
+			margin: auto
+		&-links
+			display: flex
+			justify-content: space-between
+			min-width: 283px
+			font-weight: normal
+			font-size: 12px
+			line-height: 15px
+		&-link
+			color: $light
+		&-image
+			width: 136px
+			height: 22px
