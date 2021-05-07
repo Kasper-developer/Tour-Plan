@@ -160,9 +160,51 @@
 	.newsletter-wrapper
 		max-width: 576px
 		width: 92%
+	body
+		padding-top: 78px
+		&.lock
+			overflow: hidden
 	.navbar
-		&__search, &-menu, &__user
+		&--mobile
+			&--fixed
+				position: fixed
+				top: 0
+				right: 0
+				left: 0
+				z-index: 99
+		&__user
+			flex-direction: column
+			& .user__name
+				color: $light
+				margin: 10px 0 27px 0
+			&--hidden
+				display: none
+			&--visible
+				display: block
+		&__search
+			margin-bottom: 37px
+			align-self: center
+			margin-right: 0
+			margin-left: 0
+			&--hidden
+				display: none
+			&--visible
+				display: block
+		&-bottom
+			padding-top: 30px
 			display: none
+			position: fixed
+			left: 0
+			right: 0
+			top: -100%
+			&--visible
+				display: block
+				top: 70px
+				bottom: 0
+		&-menu
+			flex-direction: column
+			&__item
+				margin-bottom: 20px
 		&-top
 			&__menu-button
 				display: flex
@@ -173,8 +215,20 @@
 			flex-direction: column
 			justify-content: space-between
 			align-items: center
+			background: #fff
+			&--middle
+				opacity: 0
+				transition: all 0.2s
+			&--top
+				transform: rotate(45deg)
+				margin-top: 5px
+				transition: all 0.3s
+			&--bottom
+				transform: rotate(-45deg)
+				margin-bottom: 5px
+				transition: all 0.3s
 			&__line
-				width: 22px
+				width: 24px
 				height: 1px
 				background: $text-color
 				padding: 0
@@ -476,3 +530,7 @@
 					left: 17%
 				&-next
 					right: 17%
+	.navbar
+		&__search
+			width: 245px
+			height: 40px
