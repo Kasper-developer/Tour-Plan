@@ -59,7 +59,7 @@ body {
   background: #F5FAFE;
   border: none;
   padding-left: 23px;
-  padding-right: 75px;
+  padding-right: 78px;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
@@ -1736,6 +1736,11 @@ body {
   }
 
   .navbar__search {
+    width: 245px;
+    height: 40px;
+  }
+
+  .search__input {
     width: 245px;
     height: 40px;
   }
