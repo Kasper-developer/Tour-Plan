@@ -7,12 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      onload="this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preload"
+      href="css/swiper-bundle.min.css"
+      onload="this.rel='stylesheet'"
+    />
+    <link rel="preload" href="css/reset.css" onload="this.rel='stylesheet'" />
+    <link rel="preload" href="css/aos.css" onload="this.rel='stylesheet'" />
+    <link rel="preload" href="css/style.css" onload="this.rel='stylesheet'" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
@@ -31,7 +36,8 @@
             <form
               action="#"
               class="search navbar__search navbar__search--hidden"
-							data-aos="fade-right" data-aos-delay="200"
+              data-aos="fade-right"
+              data-aos-delay="200"
             >
               <input
                 type="text"
@@ -43,7 +49,12 @@
               </button>
             </form>
 
-            <a href="#" class="user navbar__user navbar__user--hidden" data-aos="fade-right" data-aos-delay="300">
+            <a
+              href="#"
+              class="user navbar__user navbar__user--hidden"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <img
                 src="img/header/avatar.jpg"
                 alt="Avatar: Kasper"
@@ -52,7 +63,11 @@
               <span class="user__name">Kasper</span>
             </a>
             <!-- /.user -->
-            <button class="menu-button navbar-top__menu-button" data-aos="fade-left" data-aos-delay="100">
+            <button
+              class="menu-button navbar-top__menu-button"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <span class="menu-button__line menu-button--top--line"></span>
               <span class="menu-button__line menu-button--middle--line"></span>
               <span class="menu-button__line menu-button--bottom--line"></span>
@@ -66,7 +81,11 @@
         <div class="navbar-bottom">
           <div class="container">
             <ul class="navbar-menu">
-              <li class="navbar-menu__item navbar__user--visible" data-aos="fade-up" data-aos-delay="50">
+              <li
+                class="navbar-menu__item navbar__user--visible"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
                 <a href="#" class="user navbar__user">
                   <img
                     src="img/header/avatar.jpg"
@@ -77,7 +96,11 @@
                 </a>
                 <!-- /.user -->
               </li>
-              <li class="navbar-menu__item navbar__search--visible" data-aos="fade-up" data-aos-delay="100">
+              <li
+                class="navbar-menu__item navbar__search--visible"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <form
                   action="#"
                   class="search navbar__search navbar__search--visible"
@@ -92,25 +115,53 @@
                   </button>
                 </form>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="150">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="200">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <a href="#" class="navbar-menu__link">Hotels</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="250">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
                 <a href="#" class="navbar-menu__link">Activities</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="300">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="350">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="350"
+              >
                 <a href="#" class="navbar-menu__link">Restaurants</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="400">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <a href="#" class="navbar-menu__link">Events</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-up" data-aos-delay="450">
+              <li
+                class="navbar-menu__item"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
                 <a href="#" class="navbar-menu__link">Rodrigues</a>
               </li>
             </ul>
@@ -124,13 +175,25 @@
       <nav class="breadcrumb">
         <div class="container">
           <ul class="breadcrumb-list">
-            <li class="breadcrumb-list__item" data-aos="fade-right" data-aos-delay="50">
+            <li
+              class="breadcrumb-list__item"
+              data-aos="fade-right"
+              data-aos-delay="50"
+            >
               <a href="#" class="breadcrumb-list__link">Home</a>
             </li>
-            <li class="breadcrumb-list__item" data-aos="fade-right" data-aos-delay="100">
+            <li
+              class="breadcrumb-list__item"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <a href="#" class="breadcrumb-list__link">Flash Offers</a>
             </li>
-            <li class="breadcrumb-list__item" data-aos="fade-right" data-aos-delay="150">
+            <li
+              class="breadcrumb-list__item"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               Grand Hilton Hotel
             </li>
           </ul>
@@ -168,7 +231,11 @@
           </div>
           <!-- /.hotel-info -->
           <div class="hotel-grid">
-            <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-right" data-aos-delay="150">
+            <div
+              class="swiper-container hotel-slider hotel__slider"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -334,7 +401,11 @@
             </div>
             <!-- /.packages-first -->
 
-            <div class="packages-item packages-item__1" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="packages-item packages-item__1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="img/packages/image-2.jpg"
                 alt="LUX* Belle Mare"
@@ -381,7 +452,11 @@
               </div>
             </div>
             <!-- /.packages-item -->
-            <div class="packages-item packages-item__2" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="packages-item packages-item__2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <img
                 src="img/packages/image-3.jpg"
                 alt="White Palace"
@@ -428,7 +503,11 @@
               </div>
             </div>
             <!-- /.packages-item -->
-            <div class="packages-item packages-item__3" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="packages-item packages-item__3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="img/packages/image-4.jpg"
                 alt="Luxury Place"
@@ -475,7 +554,11 @@
               </div>
             </div>
             <!-- /.packages-item -->
-            <div class="packages-item packages-item__4" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="packages-item packages-item__4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <img
                 src="img/packages/image-5.jpg"
                 alt="Hotel Five Star"
@@ -530,7 +613,11 @@
 
       <section class="newsletter">
         <div class="newsletter-wrapper">
-          <h2 class="newsletter-title" data-aos="fade-right" data-aos-delay="100">
+          <h2
+            class="newsletter-title"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             subscribe to our
             <strong class="newsletter-title__strong">Newsletter</strong>
           </h2>
@@ -538,7 +625,8 @@
             action="send.php"
             method="POST"
             class="subscribe newsletter__subscribe"
-						data-aos="fade-left" data-aos-delay="200"
+            data-aos="fade-left"
+            data-aos-delay="200"
           >
             <input
               type="email"
@@ -560,7 +648,11 @@
           <h2 class="reviews-title" data-aos="fade-right" data-aos-delay="150">
             What people think about us
           </h2>
-          <div class="swiper-container reviews-slider reviews__slider" data-aos="fade-right" data-aos-delay="150">
+          <div
+            class="swiper-container reviews-slider reviews__slider"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="reviews-slider__item">
@@ -790,9 +882,14 @@
               src="img/footer/vartical-logo.svg"
               alt="Best Tour Plan"
               class="footer__logo"
-							data-aos="fade-right" data-aos-delay="100"
+              data-aos="fade-right"
+              data-aos-delay="100"
             />
-            <div class="footer__list footer__categories" data-aos="fade-right" data-aos-delay="200">
+            <div
+              class="footer__list footer__categories"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <h3 class="footer__title">All categories</h3>
               <ul class="footer__ul">
                 <li class="footer__item">
@@ -822,7 +919,11 @@
               </ul>
             </div>
             <!-- /.footer__list -->
-            <div class="footer__list footer__additional" data-aos="fade-right" data-aos-delay="300">
+            <div
+              class="footer__list footer__additional"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <h3 class="footer__title">Additional information</h3>
               <ul class="footer__ul">
                 <li class="footer__item">
@@ -850,7 +951,11 @@
               </ul>
             </div>
             <!-- /.footer__list -->
-            <div class="footer__social-network" data-aos="fade-up" data-aos-delay="150">
+            <div
+              class="footer__social-network"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               <h3 class="footer__title">Social Network</h3>
               <div class="footer__social-links">
                 <a href="#" class="footer__link">
@@ -866,7 +971,11 @@
               <!-- /.footer__social-links -->
             </div>
             <!-- /.footer__social-network -->
-            <div class="footer__list footer__legal" data-aos="fade-right" data-aos-delay="400">
+            <div
+              class="footer__list footer__legal"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               <h3 class="footer__title">Legal information</h3>
               <ul class="footer__ul">
                 <li class="footer__item">
@@ -884,7 +993,11 @@
               </ul>
             </div>
             <!-- /.footer__list -->
-            <div class="footer__contact-details" data-aos="fade-right" data-aos-delay="100">
+            <div
+              class="footer__contact-details"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
               <p class="footer__text">
                 Feel free to contact us by phone, email or by our contact form
@@ -939,7 +1052,11 @@
               </ul>
             </div>
             <!-- /.footer__contact-details -->
-            <div class="footer__contact-form" data-aos="fade-right" data-aos-delay="200">
+            <div
+              class="footer__contact-form"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <h3 class="footer__title footer__title--mb-3">
                 Send us a message
               </h3>
@@ -972,7 +1089,12 @@
             <!-- /.footer__contact-form -->
           </div>
 
-          <div class="footer__copyright" data-aos="fade-right" data-aos-offset="50" data-aos-delay="200">
+          <div
+            class="footer__copyright"
+            data-aos="fade-right"
+            data-aos-offset="50"
+            data-aos-delay="200"
+          >
             <div class="container">
               <div class="footer__copyright-wrapper">
                 <div class="footer__copyright-links">
