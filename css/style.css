@@ -504,7 +504,7 @@ body {
   overflow: hidden;
 }
 .packages-first__image::before {
-  content: 'Flash Offer';
+  content: 'Быстрый заказ';
   position: absolute;
   height: 30px;
   color: #ffffff;
@@ -622,7 +622,7 @@ body {
   flex-direction: column;
 }
 .packages-item::before {
-  content: 'Flash Offer';
+  content: 'Быстрый заказ';
   position: absolute;
   height: 30px;
   color: #ffffff;
